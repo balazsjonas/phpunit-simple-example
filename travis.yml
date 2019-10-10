@@ -1,11 +1,11 @@
 language: php
 php:
   - 7.1.9
-#services:
-#  - docker
+services:
+  - docker
 before_install:
   - composer update
-#script:
-#  - docker run -v${PWD}:/app --rm phpunit/phpunit /app
+script:
+  - docker run -v${PWD}:/app --rm phpunit/phpunit /app
 
 
